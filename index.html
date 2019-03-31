@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=610">
+
+  
+  <!-- page hiding snippet -->
+<style>.async-hide { opacity: 0 !important} </style>
+<!--script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-TC8JNW6':true});</script-->
+
+  <!--script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86108975-2', 'auto');
+  ga('require', 'GTM-TC8JNW6'); // google optimize
+  ga('send', 'pageview');
+</script-->
+
+  
+
+  <title>Music | Aryabhatiya</title>
+  <meta name="description" content="Learn Music Theory from First Principles. Interactive lessons to teach basic concepts about Music Theory.">
+
+  <meta property="og:title" content="Music Theory Lessons - Aryabhatiya" />
+  <meta property="og:description" content="Interactive lessons for learning Music Theory." />
+  <meta property="og:image" content="arya-ico.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="arya-ico.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.lightnote.co/assets/main.css?1547451433456163759">
+  <link rel="canonical" href="https://www.lightnote.co/">
+  <link rel="alternate" type="https://www.lightnote.co/application/rss+xml" title="LightNote" href="https://www.lightnote.co/feed.xml">
+  <link rel="stylesheet" href="https://www.lightnote.co/assets/rangeslider.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://www.lightnote.co/assets/js/rangeslider.min.js"></script>
+
+  <script src="https://www.lightnote.co/assets/js/tone.min.js"></script>
+  <script src="https://www.lightnote.co/assets/js/StartAudioContext.js"></script>
+  <script src="https://www.lightnote.co/assets/js/wave.js"></script>
+</head>
+
+
+  <body>
+    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="share-buttons">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div class="fb-share-button" data-href="https://music.aryabhatiya.ml" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+</div>
+
+    
+
+    <div class="cover"></div>
+
+    <div class="landing-container">
+      <main role="main" aria-label="Content">
+        <style media="screen">
+.landing-lessons {
+  width: 245px;
+  text-align: left;
+  margin: 60px auto;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.landing-lessons .topic {
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+
+.landing-lessons .topic .topic-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 100px;
+}
+  main {
+    width: 100%;
+  }
+  .centered-landing {
+    text-align: center;
+  }
+  #contents {
+    padding-top: 30px;
+  }
+  .full-wave {
+    position: relative;
+    left: -40px;
+    opacity: 0;
+    transform: perspective(100rem) rotateX(10deg) scale(1);
+  }
+  .begin-course {
+    z-index: 10;
+    position: relative;
+  }
+  .begin-course {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .play-me {
+    color: #E54C4E;
+    position: relative;
+    margin-bottom: -60px;
+    left: 250px;
+    top: -50px;
+    font-family: "Comic Sans MS", "Roboto", "Helvetica", "sans-serif";
+    transform: rotateZ(15deg);
+    display: inline-block;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .play-me.appear {
+    opacity: 1;
+    top: -60px;
+    transition: all 0.2s;
+  }
+</style>
+
+<div class="centered-landing">
+  <a id="logo" href="/"></a>
+<h1 style="margin-top: 0;padding-top: 20px; padding-bottom: 50px;">How Music Works<br><small>Interactive Music Theory Lessons</small></h1>
+
+<div class="play-me">play me</div>
+<!-- <ul>
+  <li>What makes two notes sound good together?</li>
+  <li>Why does 90% of pop music use the same chord progressions?</li>
+  <li>What are the five notes that always sound great?</li>
+</ul>
+<p>We'll show you with our fun and playable lessons.</p> -->
+
+<div class="new-piano">
+  <div id="c1" freq="262" class="piano-key white-key">
+  </div><div freq="277" class="piano-key black-key">
+  </div><div freq="294" class="piano-key white-key">
+  </div><div freq="311" class="piano-key black-key">
+  </div><div id="e1" freq="330" class="piano-key white-key">
+  </div><div freq="349" class="piano-key white-key">
+  </div><div freq="370" class="piano-key black-key">
+  </div><div id="g1" freq="392" class="piano-key white-key">
+  </div><div freq="415" class="piano-key black-key">
+  </div><div freq="440" class="piano-key white-key">
+  </div><div freq="466" class="piano-key black-key">
+  </div><div freq="494" class="piano-key white-key">
+  </div><div id="c2" freq="524" class="piano-key white-key">
+  </div><div freq="554" class="piano-key black-key">
+  </div><div freq="587" class="piano-key white-key">
+  </div><div freq="622" class="piano-key black-key">
+  </div><div freq="659" class="piano-key white-key"></div>
+</div>
+
+<br>
+<br>
+
+<a href="https://www.lightnote.co/music-theory/waves/" class="next-btn begin-course">Begin Lesson One</a>
+<br>
+
+<div class="landing-lessons">
+  <br>
+  <a href="https://www.lightnote.co/music-theory/waves/" class="topic">
+    <div class="topic-pic note1 wave"></div>
+    <h3>Sound Waves</h3>
+  </a>
+  <a href="https://www.lightnote.co/music-theory/harmony/" class="topic">
+    <div class="topic-pic note12 harmony"></div>
+    <h3>Harmony</h3>
+  </a>
+  <a href="https://www.lightnote.co/music-theory/pentatonic/" class="topic">
+    <div class="topic-pic note11 pentatonic"></div>
+    <h3>Pentatonic Scale</h3>
+  </a>
+  <a href="https://www.lightnote.co/music-theory/chromatic/" class="topic">
+    <div class="topic-pic note10 chromatic"></div>
+    <h3>Chromatic Scale</h3>
+  </a>
+  <a href="https://www.lightnote.co/music-theory/chords/" class="topic">
+    <div class="topic-pic note8 chords"></div>
+    <h3>Chords</h3>
+  </a>
+  <a href="https://www.lightnote.co/music-theory/keys/" class="topic">
+    <div class="topic-pic note6 key"></div>
+    <h3>Keys</h3>
+  </a>
+  <a href="https://www.lightnote.co/music-theory/diatonic/" class="topic">
+    <div class="topic-pic note5 chords"></div>
+    <h3>Diatonic Chords</h3>
+  </a>
+  <!--a href="/course/?ref=landingpremium" target="_blank" class="topic soon">
+    <div class="topic-pic intro" style="background-color: #25CB68"></div>
+    <h3>LightNote Premium</h3>
+  </a-->
+  <!--a href="/course/?ref=landingguitar" target="_blank" class="topic soon">
+    <div class="topic-pic blues"></div>
+    <h3>Guitar Theory</h3>
+  </a-->
+  <!--a href="/course/?ref=landingpiano" target="_blank" class="topic soon">
+    <div class="topic-pic piano"></div>
+    <h3>Piano Theory</h3>
+  </a-->
+</div>
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+  $(".begin-course").click(function(e){
+    e.preventDefault();
+    playChord(262, 330, 392);
+    $('#c1').addClass('active');
+    $('#e1').addClass('active');
+    $('#g1').addClass('active');
+    var link = $(this).attr("href");
+    setTimeout(function(){
+       window.location.href = link;
+    }, 2000);
+  });
+
+  setTimeout(function(){
+    $(".play-me").addClass('appear');
+  }, 3000);
+
+  setTimeout(function(){
+    $(".play-me").removeClass('appear');
+  }, 6000);
+
+  $(".piano-key").click(function(){
+    var freq = parseInt($(this).attr("freq"));
+    $(this).addClass('active');
+    playNote(freq);
+    function unhighlight(div){
+      setTimeout(function(){
+        div.removeClass('active');
+      }, 350);
+    }
+    unhighlight($(this));
+  });
+
+  setTimeout(function(){
+    $("#c1").addClass("active");
+    // playNote(262);
+    setTimeout(function(){
+      $("#c1").removeClass("active");
+    },500);
+  }, 2100);
+
+  setTimeout(function(){
+    $("#e1").addClass("active");
+    // playNote(330);
+    setTimeout(function(){
+      $("#e1").removeClass("active");
+    },500);
+  }, 2200);
+
+  setTimeout(function(){
+    $("#g1").addClass("active");
+    // playNote(392);
+    setTimeout(function(){
+      $("#g1").removeClass("active");
+    },500);
+  }, 2300);
+
+  setTimeout(function(){
+    $("#c2").addClass("active");
+    // playNote(524);
+    setTimeout(function(){
+      $("#c2").removeClass("active");
+    },500);
+  }, 2400);
+});
+</script>
+
+        <br>
+        <br>
+        
+      </main>
+
+      <footer class="site-footer">
+<!-- 
+  <div class="wrapper">
+
+    <h2 class="footer-heading">LightNote</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              LightNote
+            
+            </li>
+            
+            <li><a href="mailto:nathan@lightnote.co">nathan@lightnote.co</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Learn Music Theory from First Principles. Interactive lessons to teach basic concepts about Music Theory.
+</p>
+      </div>
+    </div>
+  </div> -->
+</footer>
+
+    </div>
+
+  </body>
+  <script src="https://www.lightnote.co/assets/js/music.js"></script>
+</html>
