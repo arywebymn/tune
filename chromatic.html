@@ -1,0 +1,710 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=610">
+
+  
+  <!-- page hiding snippet -->
+<style>.async-hide { opacity: 0 !important} </style>
+<!--script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-TC8JNW6':true});</script-->
+
+  <!--script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86108975-2', 'auto');
+  ga('require', 'GTM-TC8JNW6'); // google optimize
+  ga('send', 'pageview');
+</script-->
+
+  
+
+  <title>Chromatic Scale - Aryabhatiya</title>
+  <meta name="description" content="The Chromatic Scale is the 12-note system that almost all modern instruments are tuned to. This includes guitars, keyboards, violins, etc.">
+
+  <meta property="og:title" content="Chromatic Scale - Aryabhatiya" />
+  <meta property="og:description" content="Interactive lessons for learning Music Theory." />
+  <meta property="og:image" content="arya-ico.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="arya-ico.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.lightnote.co/assets/main.css?1547451433456163759">
+  <link rel="canonical" href="https://www.lightnote.co/music-theory/chromatic/">
+  <link rel="alternate" type="application/rss+xml" title="Aryabhatiya" href="https://www.lightnote.co/feed.xml">
+  <link rel="stylesheet" href="https://www.lightnote.co/assets/rangeslider.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://www.lightnote.co/assets/js/rangeslider.min.js"></script>
+
+  <script src="https://www.lightnote.co/assets/js/tone.min.js"></script>
+  <script src="https://www.lightnote.co/assets/js/StartAudioContext.js"></script>
+  <script src="https://www.lightnote.co/assets/js/wave.js"></script>
+</head>
+
+
+  <body>
+    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="share-buttons">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div class="fb-share-button" data-href="https://music.aryabhatiya.ml" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+</div>
+
+    
+
+    <sidebar>
+      <div class="toggle-menu sidebar-menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      <a id="logo" href="/"></a>
+
+      <br>
+      <a href="https://www.lightnote.co/music-theory/waves/" class="topic">
+        <div class="topic-pic note1 wave"></div>
+        <h3>Sound Waves</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/harmony/" class="topic">
+        <div class="topic-pic note12 harmony"></div>
+        <h3>Harmony</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/pentatonic/" class="topic">
+        <div class="topic-pic note11 pentatonic"></div>
+        <h3>Pentatonic Scale</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/chromatic/" class="topic">
+        <div class="topic-pic note10 chromatic"></div>
+        <h3>Chromatic Scale</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/chords/" class="topic">
+        <div class="topic-pic note8 chords"></div>
+        <h3>Chords</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/keys/" class="topic">
+        <div class="topic-pic note6 key"></div>
+        <h3>Keys</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/diatonic/" class="topic">
+        <div class="topic-pic note5 chords"></div>
+        <h3>Diatonic Chords</h3>
+      </a>
+
+      <!--a class="prem-link" href="/course/?ref=sidebartitle">
+        <h3>Premium</h3>
+      </a-->
+      <br>
+      <!--a href="/course/?ref=sidebarpremium" target="_blank" class="topic soon">
+        <span class="coming-soon new">new</span>
+        <div class="topic-pic intro" style="background-color: #25CB68"></div>
+        <h3>LightNote Premium</h3>
+      </a-->
+      <!--a href="/course/?ref=sidebarlessonguitar" target="_blank" class="topic soon">
+        <div class="topic-pic blues"></div>
+        <span class="coming-soon">premium</span>
+        <h3>Guitar Theory</h3>
+      </a-->
+      <!--a href="/course/?ref=sidebarlessonpiano" target="_blank" class="topic soon">
+        <div class="topic-pic piano"></div>
+        <span class="coming-soon">premium</span>
+        <h3>Piano Theory</h3>
+      </a-->
+      <!--br-->
+
+      <!-- <a href="#" class="signup">Subscribe</a> -->
+      <!-- <h3>Later</h3>
+      <ul>
+        <li>Rhythm</li>
+        <li>Melodies</li>
+        <li>Layering</li>
+        <li>Mapping all of this to Piano / Guitar</li>
+        <li>Digital Instruments</li>
+        <li>Harmonies</li>
+        <li>Improv / Jamming</li>
+      </ul> -->
+    </sidebar>
+
+    <div class="cover"></div>
+
+    <div class="main-container">
+      <div class="menu toggle-menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      <main role="main" aria-label="Content">
+        <article class="post">
+
+  <div class="post-content">
+    <h1>The Chromatic Scale</h1>
+
+<p>
+  The <a href="/music-theory/pentatonic/">Pentatonic Scale</a> (below) that we just covered is limiting in a lot of ways. The notes are not consistently spaced and there are so few of them. Modern music demands a more flexible system.
+</p>
+
+<div class="note note1 round" attr-freq="262">1
+</div><div class="empty-note">
+</div><div class="note note3 round" attr-freq="294">2
+</div><div class="empty-note">
+</div><div class="note note5 round" attr-freq="330">3
+</div><div class="empty-note">
+</div><div class="empty-note">
+</div><div class="note note8 round" attr-freq="392">4
+</div><div class="empty-note">
+</div><div class="note note10 round" attr-freq="440">5
+</div><div class="empty-note">
+</div><div class="empty-note">
+</div>
+<br><br>
+<p>
+  Thus the <strong>Chromatic Scale</strong> was born. This system added 7 more notes to fill in the gaps while still including all the notes from the Pentatonic Scale. Click to hear the notes.
+</p>
+<br>
+<br>
+<div class="twelve-scale">
+<div class="note note1" attr-freq="262">1
+</div><div class="note note2" attr-freq="277">2
+</div><div class="note note3" attr-freq="294">3
+</div><div class="note note4" attr-freq="311">4
+</div><div class="note note5" attr-freq="330">5
+</div><div class="note note6" attr-freq="349">6
+</div><div class="note note7" attr-freq="370">7
+</div><div class="note note8" attr-freq="392">8
+</div><div class="note note9" attr-freq="415">9
+</div><div class="note note10" attr-freq="440">10
+</div><div class="note note11" attr-freq="466">11
+</div><div class="note note12" attr-freq="494">12
+</div>
+</div>
+<br>
+<br>
+<br>
+<p>
+  Almost all modern instruments are tuned to this system, including guitars, keyboards, violins, etc. For example, press the keys of the piano below to see how they match up to the 12-note system.
+</p>
+<br>
+<br>
+<div class="piano">
+  <div class="key white-key" attr-freq="262" attr-note="1">
+  </div><div class="key black-key" attr-freq="277" attr-note="2">
+  </div><div class="key white-key" attr-freq="294" attr-note="3">
+  </div><div class="key black-key" attr-freq="311" attr-note="4">
+  </div><div class="key white-key" attr-freq="330" attr-note="5">
+  </div><div class="key white-key" attr-freq="349" attr-note="6">
+  </div><div class="key black-key" attr-freq="370" attr-note="7">
+  </div><div class="key white-key" attr-freq="392" attr-note="8">
+  </div><div class="key black-key" attr-freq="415" attr-note="9">
+  </div><div class="key white-key" attr-freq="440" attr-note="10">
+  </div><div class="key black-key" attr-freq="466" attr-note="11">
+  </div><div class="key white-key" attr-freq="494" attr-note="12">
+  </div><div class="key white-key" attr-freq="524" attr-note="1">
+  </div>
+</div>
+
+<h1>Naming the Notes</h1>
+<p>
+  At this point we've only been labeling the notes 1 through 12. It's time to show you their real names.
+</p><p>Unfortunately, I truly believe that the naming of the notes is why music theory is so difficult.
+  If I could go back in time, I would not name the notes this way.
+  But since it's what we've been using for thousands of years, there's no real way around it. Here they are:
+</p>
+
+<div class="note-board">
+  <div class="note note1 active" attr-freq="262">C
+  </div><div class="note note2 active" attr-freq="277">C#
+  </div><div class="note note3 active" attr-freq="294">D
+  </div><div class="note note4 active" attr-freq="311">D#
+  </div><div class="note note5 active" attr-freq="330">E
+  </div><div class="note note6 active" attr-freq="349">F
+  </div><div class="note note7 active" attr-freq="370">F#
+  </div><div class="note note8 active" attr-freq="392">G
+  </div><div class="note note9 active" attr-freq="415">G#
+  </div><div class="note note10 active" attr-freq="440">A
+  </div><div class="note note11 active" attr-freq="466">A#
+  </div><div class="note note12 active" attr-freq="494">B
+  </div><div class="note note1 active" attr-freq="524">C
+  </div>
+</div>
+
+<p>
+  Let's point out some <strong>poor qualities</strong> about this:
+</p>
+
+<ul>
+  <li>We use 7 letters to describe 12 notes.</li>
+  <li>There are sharps (#) each of which can also be called a flat.</li>
+  <li>Not all the notes have sharps or flats.</li>
+  <li>The natural letters will play a C Major scale, but <strong>only when you start on C</strong>.</li>
+</ul>
+
+
+<h1>Equal Temperament</h1>
+<p>
+  This 12-note system has a lot of nice properties. The first is Equal Temperament. This means that the interval between any two adjacent notes is exactly the same.
+</p>
+<p>
+  Why is this useful? Well it means we can start a melody on <strong>any</strong> note. Try it out.
+</p>
+
+<div id="t1" class="play-btn">Play</div>
+
+<div class="temp-1">
+  <div class="note note1" attr-freq="262">1
+  </div><div class="note note2" attr-freq="277">2
+  </div><div class="note note3" attr-freq="294">3
+  </div><div class="note note4" attr-freq="311">4
+  </div><div class="note note5" attr-freq="330">5
+  </div><div class="note note6" attr-freq="349">6
+  </div><div class="note note7" attr-freq="370">7
+  </div><div class="note note8" attr-freq="392">8
+  </div><div class="note note9" attr-freq="415">9
+  </div><div class="note note10" attr-freq="440">10
+  </div><div class="note note11" attr-freq="466">11
+  </div><div class="note note12" attr-freq="494">12
+  </div>
+</div>
+
+
+<div id="t2" class="play-btn">Play</div>
+
+<div class="temp-2">
+  <div class="note note1" attr-freq="262">1
+  </div><div class="note note2" attr-freq="277">2
+  </div><div class="note note3" attr-freq="294">3
+  </div><div class="note note4" attr-freq="311">4
+  </div><div class="note note5" attr-freq="330">5
+  </div><div class="note note6" attr-freq="349">6
+  </div><div class="note note7" attr-freq="370">7
+  </div><div class="note note8" attr-freq="392">8
+  </div><div class="note note9" attr-freq="415">9
+  </div><div class="note note10" attr-freq="440">10
+  </div><div class="note note11" attr-freq="466">11
+  </div><div class="note note12" attr-freq="494">12
+  </div>
+</div>
+
+
+
+
+<h1>Too many notes</h1>
+<p>
+  A downside to having all of these notes is that not all of them sound good together, making this system less forgiving than the Pentatonic Scale. Lets listen to some that don't sound so nice.
+</p>
+
+
+<div id="garbage-1" class="play-btn garbage">Play</div>
+<div id="garbage-2" class="play-btn garbage">Play</div>
+<div id="garbage-3" class="play-btn garbage">Play</div>
+
+
+<div class="temp-3">
+  <div class="note note1" attr-freq="262">1
+  </div><div class="note note2" attr-freq="277">2
+  </div><div class="note note3" attr-freq="294">3
+  </div><div class="note note4" attr-freq="311">4
+  </div><div class="note note5" attr-freq="330">5
+  </div><div class="note note6" attr-freq="349">6
+  </div><div class="note note7" attr-freq="370">7
+  </div><div class="note note8" attr-freq="392">8
+  </div><div class="note note9" attr-freq="415">9
+  </div><div class="note note10" attr-freq="440">10
+  </div><div class="note note11" attr-freq="466">11
+  </div><div class="note note12" attr-freq="494">12
+  </div>
+</div>
+
+
+
+
+<h1><small class="sub">Next</small>
+Chords
+</h1>
+<p>
+  Next, we'll take a look at notes that <strong>do</strong> sound good together.
+</p>
+<a href="/music-theory/chords/" class="next-btn">Next Section</a>
+
+
+
+
+<!--
+<h1>Our musical forefathers then decided to name these notes. They chose 440 for A and did this...</h1>
+
+<div class="note" attr-freq="262">C</div>
+<div class="note" attr-freq="277">-</div>
+<div class="note" attr-freq="294">D</div>
+<div class="note" attr-freq="311">-</div>
+<div class="note" attr-freq="330">E</div>
+<div class="note" attr-freq="349">F</div>
+<div class="note" attr-freq="370">-</div>
+<div class="note" attr-freq="392">G</div>
+<div class="note" attr-freq="415">-</div>
+<div class="note" attr-freq="440">A</div>
+<div class="note" attr-freq="466">-</div>
+<div class="note" attr-freq="494">B</div>
+<div class="note" attr-freq="523">C</div> -->
+
+
+<style media="screen">
+  .twelve-scale .note{
+    position: relative;
+  }
+
+  .temp-1, .temp-2, .temp-3 {
+    margin-bottom: 72px;
+  }
+
+  .temp-1.playing .note, .temp-2.playing .note, .temp-3.playing .note {
+    opacity: 0.5;
+    position: relative;
+  }
+
+  .temp-1.playing .active, .temp-2.playing .active, .temp-3.playing .active {
+    opacity: 1;
+    top: -4px;
+  }
+
+  .play-btn {
+    margin-bottom: 18px;
+  }
+
+  .play-btn.garbage {
+    background-color: #555;
+    margin-right: 9px;
+  }
+</style>
+
+<script type="text/javascript">
+$(".note").click(function(){
+  var freq = $(this).attr("attr-freq");
+  playNote(freq);
+});
+
+$(".key").click(function(){
+  var freq = $(this).attr("attr-freq");
+  playNote(freq);
+});
+
+$(".piano .key").hover(function(){
+  var note = $(this).attr("attr-note");
+  $(".twelve-scale .note").css("opacity", 0.5);
+  $(".twelve-scale .note"+note).css("opacity", 1)
+    .css("top", "-4px");
+}, function(){
+  var note = $(this).attr("attr-note");
+  $(".note").css("opacity", 1);
+  $(".twelve-scale .note"+note).css("top", "0px");
+});
+
+
+
+$("#t1").click(function(){
+  var interval = 600;
+  setTimeout(function() {
+    playNote(262);
+    $(".temp-1").addClass("playing");
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1 .note1").addClass("active");
+  }, 0);
+  setTimeout(function() {
+    playNote(294);
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1 .note3").addClass("active");
+  }, interval);
+  setTimeout(function() {
+    playNote(330);
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1 .note5").addClass("active");
+  }, 2*interval);
+  setTimeout(function() {
+    playNote(392);
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1 .note8").addClass("active");
+  }, 3*interval);
+  setTimeout(function() {
+    playNote(349);
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1 .note6").addClass("active");
+  }, 4*interval);
+  setTimeout(function() {
+    playNote(330);
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1 .note5").addClass("active");
+  }, 4.5*interval);
+  setTimeout(function() {
+    playNote(294);
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1 .note3").addClass("active");
+  }, 5*interval);
+  setTimeout(function() {
+    playNote(262);
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1 .note1").addClass("active");
+  }, 6*interval);
+  setTimeout(function() {
+    $(".temp-1 .note").removeClass("active");
+    $(".temp-1").removeClass("playing");
+  }, 8*interval);
+});
+
+
+// <!--
+// C4 261.63  131.87
+//      277.18  124.47
+// D4 293.66  117.48
+//     311.13 110.89
+// E4 329.63  104.66
+// F4 349.23  98.79
+//     369.99 93.24
+// G4 392.00  88.01
+//     415.30 83.07
+// A4 440.00  78.41
+//     466.16 74.01
+// B4 493.88  69.85
+// C5 523.25  65.93 -->
+
+
+$("#t2").click(function(){
+  var interval = 600;
+
+  playNote(311);
+  $(".temp-2").addClass("playing");
+  $(".temp-2 .note").removeClass("active");
+  $(".temp-2 .note4").addClass("active");
+
+  setTimeout(function() {
+    playNote(349);
+    $(".temp-2 .note").removeClass("active");
+    $(".temp-2 .note6").addClass("active");
+  }, interval);
+  setTimeout(function() {
+    playNote(392);
+    $(".temp-2 .note").removeClass("active");
+    $(".temp-2 .note8").addClass("active");
+  }, 2*interval);
+  setTimeout(function() {
+    playNote(466);
+    $(".temp-2 .note").removeClass("active");
+    $(".temp-2 .note11").addClass("active");
+  }, 3*interval);
+  setTimeout(function() {
+    playNote(415);
+    $(".temp-2 .note").removeClass("active");
+    $(".temp-2 .note9").addClass("active");
+  }, 4*interval);
+  setTimeout(function() {
+    playNote(392);
+    $(".temp-2 .note").removeClass("active");
+    $(".temp-2 .note8").addClass("active");
+  }, 4.5*interval);
+  setTimeout(function() {
+    playNote(349);
+    $(".temp-2 .note").removeClass("active");
+    $(".temp-2 .note6").addClass("active");
+  }, 5*interval);
+  setTimeout(function() {
+    playNote(311);
+    $(".temp-2 .note").removeClass("active");
+    $(".temp-2 .note4").addClass("active");
+  }, 6*interval);
+  setTimeout(function() {
+    $(".temp-2 .note").removeClass("active");
+    $(".temp-2").removeClass("playing");
+  }, 8*interval);
+});
+
+$("#garbage-1").click(function(){
+  playChord(330,349,370);
+  $(".temp-3 .note").removeClass("active");
+  $(".temp-3").addClass("playing");
+  $(".temp-3 .note5").addClass("active");
+  $(".temp-3 .note6").addClass("active");
+  $(".temp-3 .note7").addClass("active");
+  setTimeout(function() {
+    $(".temp-3 .note").removeClass("active");
+    $(".temp-3").removeClass("playing");
+  }, 1000);
+});
+
+$("#garbage-2").click(function(){
+  playChord(262,277,311);
+  $(".temp-3 .note").removeClass("active");
+  $(".temp-3").addClass("playing");
+  $(".temp-3 .note1").addClass("active");
+  $(".temp-3 .note2").addClass("active");
+  $(".temp-3 .note4").addClass("active");
+  setTimeout(function() {
+    $(".temp-3 .note").removeClass("active");
+    $(".temp-3").removeClass("playing");
+  }, 1000);
+});
+
+$("#garbage-3").click(function(){
+  playChord(349,330,494);
+  $(".temp-3 .note").removeClass("active");
+  $(".temp-3").addClass("playing");
+  $(".temp-3 .note6").addClass("active");
+  $(".temp-3 .note5").addClass("active");
+  $(".temp-3 .note11").addClass("active");
+  setTimeout(function() {
+    $(".temp-3 .note").removeClass("active");
+    $(".temp-3").removeClass("playing");
+  }, 1000);
+});
+
+// <!--
+// C4 261.63  131.87
+//      277.18  124.47
+// D4 293.66  117.48
+//     311.13 110.89
+// E4 329.63  104.66
+// F4 349.23  98.79
+//     369.99 93.24
+// G4 392.00  88.01
+//     415.30 83.07
+// A4 440.00  78.41
+//     466.16 74.01
+// B4 493.88  69.85
+// C5 523.25  65.93 -->
+
+</script>
+
+  </div>
+
+</article>
+
+        <br>
+        <br>
+        
+          <style media="screen">
+  .see-course{
+    clear:left;
+    font:14px "Roboto",Helvetica,Arial,sans-serif;
+    background-color: #F4F4F4;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 36px;
+    position: relative;
+    padding-right: 150px;
+  }
+  .see-course h2 {
+    font-size: 20px;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  .see-course p {
+    width: auto;
+  }
+  .see-course-btn, .see-course-btn:link, .see-course-btn:visited, .see-course-btn:active {
+    background-color: #25CB68;
+    border-radius: 500px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #FFF;
+    font-size: 18px;
+    opacity: 1;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .see-course-btn:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    color: #FFF;
+    text-decoration: none;
+  }
+  .phone-img {
+    width: 163px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+</style>
+
+<!--div class="see-course">
+  <h2>LightNote Premium Course</h2>
+  <p>
+    Finally learn how music works! Learn to improvise, guitar theory, and much more!
+  </p>
+  <img src="/assets/images/book/phone.png" class="phone-img" alt="">
+  <a href="/course/?ref=bottom" target="_blank" class="see-course-btn">
+    View the Course
+  </a>
+</div-->
+
+        
+      </main>
+
+      <footer class="site-footer">
+<!-- 
+  <div class="wrapper">
+
+    <h2 class="footer-heading">LightNote</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              LightNote
+            
+            </li>
+            
+            <li><a href="mailto:nathan@lightnote.co">nathan@lightnote.co</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Learn Music Theory from First Principles. Interactive lessons to teach basic concepts about Music Theory.
+</p>
+      </div>
+    </div>
+  </div> -->
+</footer>
+
+    </div>
+
+  </body>
+  <script src="https://www.lightnote.co/assets/js/music.js"></script>
+  <script type="text/javascript">
+  $(".toggle-menu").click(function(){
+    $('body').toggleClass("sidebar-visible");
+    $('sidebar').toggleClass("sidebar-visible");
+  });
+  $(".cover").click(function(){
+    $('body').toggleClass("sidebar-visible");
+    $('sidebar').toggleClass("sidebar-visible");
+  });
+  </script>
+</html>
