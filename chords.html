@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=610">
+
+  
+  <!-- page hiding snippet -->
+<style>.async-hide { opacity: 0 !important} </style>
+<!--script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-TC8JNW6':true});</script-->
+
+  <!--script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86108975-2', 'auto');
+  ga('require', 'GTM-TC8JNW6'); // google optimize
+  ga('send', 'pageview');
+</script-->
+
+  
+
+  <title>Chords - Aryabhatiya</title>
+  <meta name="description" content="Learn Music Theory from First Principles. Interactive lessons to teach basic concepts about Music Theory.">
+
+  <meta property="og:title" content="Chords - Aryabhatiya" />
+  <meta property="og:description" content="Interactive lessons for learning Music Theory." />
+  <meta property="og:image" content="arya-ico.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="arya-ico.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.lightnote.co/assets/main.css?1547451433456163759">
+  <link rel="canonical" href="https://www.lightnote.co/music-theory/chords/">
+  <link rel="alternate" type="application/rss+xml" title="Aryabhatiya" href="https://www.lightnote.co/feed.xml">
+  <link rel="stylesheet" href="https://www.lightnote.co/assets/rangeslider.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://www.lightnote.co/assets/js/rangeslider.min.js"></script>
+
+  <script src="https://www.lightnote.co/assets/js/tone.min.js"></script>
+  <script src="https://www.lightnote.co/assets/js/StartAudioContext.js"></script>
+  <script src="https://www.lightnote.co/assets/js/wave.js"></script>
+</head>
+
+
+  <body>
+    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="share-buttons">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div class="fb-share-button" data-href="music.aryabhatiya.ml" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+</div>
+
+    
+
+    <sidebar>
+      <div class="toggle-menu sidebar-menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      <a id="logo" href="/"></a>
+
+      <br>
+      <a href="https://www.lightnote.co/music-theory/waves/" class="topic">
+        <div class="topic-pic note1 wave"></div>
+        <h3>Sound Waves</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/harmony/" class="topic">
+        <div class="topic-pic note12 harmony"></div>
+        <h3>Harmony</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/pentatonic/" class="topic">
+        <div class="topic-pic note11 pentatonic"></div>
+        <h3>Pentatonic Scale</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/chromatic/" class="topic">
+        <div class="topic-pic note10 chromatic"></div>
+        <h3>Chromatic Scale</h3>
+      </a>
+      <a href="/music-theory/chords/" class="topic">
+        <div class="topic-pic note8 chords"></div>
+        <h3>Chords</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/keys/" class="topic">
+        <div class="topic-pic note6 key"></div>
+        <h3>Keys</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/diatonic/" class="topic">
+        <div class="topic-pic note5 chords"></div>
+        <h3>Diatonic Chords</h3>
+      </a>
+
+      <!--a class="prem-link" href="/course/?ref=sidebartitle">
+        <h3>Premium</h3>
+      </a-->
+      <br>
+      <!--a href="/course/?ref=sidebarpremium" target="_blank" class="topic soon">
+        <span class="coming-soon new">new</span>
+        <div class="topic-pic intro" style="background-color: #25CB68"></div>
+        <h3>LightNote Premium</h3>
+      </a-->
+      <!--a href="/course/?ref=sidebarlessonguitar" target="_blank" class="topic soon">
+        <div class="topic-pic blues"></div>
+        <span class="coming-soon">premium</span>
+        <h3>Guitar Theory</h3>
+      </a-->
+      <!--a href="/course/?ref=sidebarlessonpiano" target="_blank" class="topic soon">
+        <div class="topic-pic piano"></div>
+        <span class="coming-soon">premium</span>
+        <h3>Piano Theory</h3>
+      </a-->
+      <!--br-->
+
+      <!-- <a href="#" class="signup">Subscribe</a> -->
+      <!-- <h3>Later</h3>
+      <ul>
+        <li>Rhythm</li>
+        <li>Melodies</li>
+        <li>Layering</li>
+        <li>Mapping all of this to Piano / Guitar</li>
+        <li>Digital Instruments</li>
+        <li>Harmonies</li>
+        <li>Improv / Jamming</li>
+      </ul> -->
+    </sidebar>
+
+    <div class="cover"></div>
+
+    <div class="main-container">
+      <div class="menu toggle-menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      <main role="main" aria-label="Content">
+        <article class="post">
+
+  <div class="post-content">
+    <h1>Chords<br>
+<small>A group of notes that sound good together.</small></h1>
+<p>
+  Here we'll take a look at three of the most common chords: Major, Minor, and Diminished. These are all known as Triads, simply a chord with three notes.
+</p>
+
+
+<h1>Major Chord</h1>
+<p>
+  The Major Chord is the most common chord. Whenever you're asked to play a chord without specifying what type, then it's a Major chord. (For example, D Chord = D Major Chord).
+  <ul>
+    <li>Start with any note. This is the first note in the chord.</li>
+    <li>For the second note, count up <strong>four</strong> notes.</li>
+    <li>For the third note, count up <strong>three</strong> more notes. </li>
+    <li>The chord is named after the first note.</li>
+  </ul>
+</p>
+
+<p>
+  Click a note to see its Major Chord.
+</p>
+
+<h3 id="major-name">&nbsp;</h3>
+<br>
+<div id="major-keyboard" style='display: inline-block; overflow-x: hidden; width: 2000px'>
+  <div id="n1" attr-note-count="1" class="note note1 active" attr-freq="262">C
+  </div><div id="n2" attr-note-count="2" class="note note2 active" attr-freq="277">C#
+  </div><div id="n3" attr-note-count="3" class="note note3 active" attr-freq="294">D
+  </div><div id="n4" attr-note-count="4" class="note note4 active" attr-freq="311">D#
+  </div><div id="n5" attr-note-count="5" class="note note5 active" attr-freq="330">E
+  </div><div id="n6" attr-note-count="6" class="note note6 active" attr-freq="349">F
+  </div><div id="n7" attr-note-count="7" class="note note7 active" attr-freq="370">F#
+  </div><div id="n8" attr-note-count="8" class="note note8 active" attr-freq="392">G
+  </div><div id="n9" attr-note-count="9" class="note note9 active" attr-freq="415">G#
+  </div><div id="n10" attr-note-count="10" class="note note10 active" attr-freq="440">A
+  </div><div id="n11" attr-note-count="11" class="note note11 active" attr-freq="466">A#
+  </div><div id="n12" attr-note-count="12" class="note note12 active" attr-freq="494">B
+  </div><div id="n13" attr-note-count="13" class="note note1 active" attr-freq="524">C
+  </div><div id="n14" attr-note-count="14" class="note note2 active" attr-freq="554">C#
+  </div><div id="n15" attr-note-count="15" class="note note3 active" attr-freq="588">D
+  </div><div id="n16" attr-note-count="16" class="note note4 active" attr-freq="622">D#
+  </div><div id="n17" attr-note-count="17" class="note note5 active" attr-freq="660">E
+  </div><div id="n18" attr-note-count="18" class="note note6 active" attr-freq="698">F
+  </div><div id="n19" attr-note-count="19" class="note note7 active" attr-freq="740">F#
+  </div><div id="n20" attr-note-count="20" class="note note8 active" attr-freq="784">G
+  </div><div id="n21" attr-note-count="21" class="note note9 active" attr-freq="830">G#
+  </div><div id="n22" attr-note-count="22" class="note note10 active" attr-freq="880">A
+  </div><div id="n23" attr-note-count="23" class="note note11 active" attr-freq="932">A#
+  </div><div id="n24" attr-note-count="24" class="note note12 active" attr-freq="988">B
+  </div><div id="n25" attr-note-count="25" class="note note1 active" attr-freq="1048">C
+  </div>
+</div>
+<div class="counts">
+  <div class="main">0
+  </div><div>1
+  </div><div>2
+  </div><div>3
+  </div><div class="main">4
+  </div><div>5
+  </div><div>6
+  </div><div class="main">7
+  </div>
+</div>
+
+
+
+
+
+
+
+<h1>Minor Chord</h1>
+<p>
+  The Minor Chord is similar to the Major Chord except that the second note is one lower:
+  <ul>
+    <li>Start with any note. This is the first note in the chord.</li>
+    <li>For the second note, count up <strong>three</strong> notes.</li>
+    <li>For the third note, count up <strong>four</strong> more notes. </li>
+    <li>The chord is named after the first note.</li>
+  </ul>
+</p>
+
+<p>
+  Click a note to see its Minor Chord.
+</p>
+
+<h3 id="minor-name">&nbsp;</h3>
+<br>
+<div id="minor-keyboard" style='display: inline-block; overflow-x: hidden; width: 2000px'>
+  <div id="n1" attr-note-count="1" class="note note1 active" attr-freq="262">C
+  </div><div id="n2" attr-note-count="2" class="note note2 active" attr-freq="277">C#
+  </div><div id="n3" attr-note-count="3" class="note note3 active" attr-freq="294">D
+  </div><div id="n4" attr-note-count="4" class="note note4 active" attr-freq="311">D#
+  </div><div id="n5" attr-note-count="5" class="note note5 active" attr-freq="330">E
+  </div><div id="n6" attr-note-count="6" class="note note6 active" attr-freq="349">F
+  </div><div id="n7" attr-note-count="7" class="note note7 active" attr-freq="370">F#
+  </div><div id="n8" attr-note-count="8" class="note note8 active" attr-freq="392">G
+  </div><div id="n9" attr-note-count="9" class="note note9 active" attr-freq="415">G#
+  </div><div id="n10" attr-note-count="10" class="note note10 active" attr-freq="440">A
+  </div><div id="n11" attr-note-count="11" class="note note11 active" attr-freq="466">A#
+  </div><div id="n12" attr-note-count="12" class="note note12 active" attr-freq="494">B
+  </div><div id="n13" attr-note-count="13" class="note note1 active" attr-freq="524">C
+  </div><div id="n14" attr-note-count="14" class="note note2 active" attr-freq="554">C#
+  </div><div id="n15" attr-note-count="15" class="note note3 active" attr-freq="588">D
+  </div><div id="n16" attr-note-count="16" class="note note4 active" attr-freq="622">D#
+  </div><div id="n17" attr-note-count="17" class="note note5 active" attr-freq="660">E
+  </div><div id="n18" attr-note-count="18" class="note note6 active" attr-freq="698">F
+  </div><div id="n19" attr-note-count="19" class="note note7 active" attr-freq="740">F#
+  </div><div id="n20" attr-note-count="20" class="note note8 active" attr-freq="784">G
+  </div><div id="n21" attr-note-count="21" class="note note9 active" attr-freq="830">G#
+  </div><div id="n22" attr-note-count="22" class="note note10 active" attr-freq="880">A
+  </div><div id="n23" attr-note-count="23" class="note note11 active" attr-freq="932">A#
+  </div><div id="n24" attr-note-count="24" class="note note12 active" attr-freq="988">B
+  </div><div id="n25" attr-note-count="25" class="note note1 active" attr-freq="1048">C
+  </div>
+</div>
+<div class="minor-counts">
+  <div class="main">0
+  </div><div>1
+  </div><div>2
+  </div><div class="main">3
+  </div><div>4
+  </div><div>5
+  </div><div>6
+  </div><div class="main">7
+  </div>
+</div>
+
+
+
+
+
+
+<h1>Diminished Chord</h1>
+<p>
+  The Diminished Chord is a less common chord where the third note is one lower than the Minor chord's third note.
+  <ul>
+    <li>Start with any note. This is the first note in the chord.</li>
+    <li>For the second note, count up <strong>three</strong> notes.</li>
+    <li>For the third note, count up <strong>three</strong> more notes. </li>
+    <li>The chord is named after the first note.</li>
+  </ul>
+</p>
+
+<p>
+  Click a note to see its Diminished Chord.
+</p>
+
+<h3 id="diminished-name">&nbsp;</h3>
+<br>
+<div id="diminished-keyboard" style='display: inline-block; overflow-x: hidden; width: 2000px'>
+  <div id="n1" attr-note-count="1" class="note note1 active" attr-freq="262">C
+  </div><div id="n2" attr-note-count="2" class="note note2 active" attr-freq="277">C#
+  </div><div id="n3" attr-note-count="3" class="note note3 active" attr-freq="294">D
+  </div><div id="n4" attr-note-count="4" class="note note4 active" attr-freq="311">D#
+  </div><div id="n5" attr-note-count="5" class="note note5 active" attr-freq="330">E
+  </div><div id="n6" attr-note-count="6" class="note note6 active" attr-freq="349">F
+  </div><div id="n7" attr-note-count="7" class="note note7 active" attr-freq="370">F#
+  </div><div id="n8" attr-note-count="8" class="note note8 active" attr-freq="392">G
+  </div><div id="n9" attr-note-count="9" class="note note9 active" attr-freq="415">G#
+  </div><div id="n10" attr-note-count="10" class="note note10 active" attr-freq="440">A
+  </div><div id="n11" attr-note-count="11" class="note note11 active" attr-freq="466">A#
+  </div><div id="n12" attr-note-count="12" class="note note12 active" attr-freq="494">B
+  </div><div id="n13" attr-note-count="13" class="note note1 active" attr-freq="524">C
+  </div><div id="n14" attr-note-count="14" class="note note2 active" attr-freq="554">C#
+  </div><div id="n15" attr-note-count="15" class="note note3 active" attr-freq="588">D
+  </div><div id="n16" attr-note-count="16" class="note note4 active" attr-freq="622">D#
+  </div><div id="n17" attr-note-count="17" class="note note5 active" attr-freq="660">E
+  </div><div id="n18" attr-note-count="18" class="note note6 active" attr-freq="698">F
+  </div><div id="n19" attr-note-count="19" class="note note7 active" attr-freq="740">F#
+  </div><div id="n20" attr-note-count="20" class="note note8 active" attr-freq="784">G
+  </div><div id="n21" attr-note-count="21" class="note note9 active" attr-freq="830">G#
+  </div><div id="n22" attr-note-count="22" class="note note10 active" attr-freq="880">A
+  </div><div id="n23" attr-note-count="23" class="note note11 active" attr-freq="932">A#
+  </div><div id="n24" attr-note-count="24" class="note note12 active" attr-freq="988">B
+  </div><div id="n25" attr-note-count="25" class="note note1 active" attr-freq="1048">C
+  </div>
+</div>
+<div class="diminished-counts">
+  <div class="main">0
+  </div><div>1
+  </div><div>2
+  </div><div class="main">3
+  </div><div>4
+  </div><div>5
+  </div><div class="main">6
+  </div>
+</div>
+
+
+<h1><small class="sub">Next</small>
+Keys
+</h1>
+<p>
+  Since not all notes sound good together, a song will usually use only a subset of the twelve notes. Next, we'll look at some of those subsets.
+</p>
+<a href="https://www.lightnote.co/music-theory/keys/" class="next-btn">Next Section</a>
+
+
+
+
+
+<style media="screen">
+  #major-keyboard, #minor-keyboard, #diminished-keyboard {
+    padding: 4px 0;
+  }
+  #major-keyboard.played .note, #minor-keyboard.played .note, #diminished-keyboard.played .note{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .counts, .minor-counts, .diminished-counts {
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 500px;
+    overflow: hidden;
+  }
+
+  .counts div, .minor-counts div, .diminished-counts div {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-right: 11px;
+    color: #AAA;
+    text-align: center;
+    padding: 5px;
+    border-radius: 30px;
+  }
+  .counts .main, .minor-counts .main, .diminished-counts .main {
+    color: white;
+    background-color: black;
+  }
+  #major-keyboard.played .note.played, #minor-keyboard.played .note.played, #diminished-keyboard.played .note.played{
+    opacity: 1;
+    position: relative;
+    top: -4px;
+  }
+</style>
+
+<script type="text/javascript">
+$("#major-keyboard .note").click(function(){
+  $("#major-keyboard .note").removeClass("played");
+  var interval = 600;
+  var freq = $(this).attr("attr-freq");
+  var secondNote = freq * 5 / 4;
+  var thirdNote = freq * 3 / 2;
+  var noteCount = parseInt($(this).attr("attr-note-count"));
+  var chordName = $(this).html();
+  $("#major-keyboard").addClass("played");
+  playNote(freq);
+  $("#major-keyboard #n"+noteCount).addClass("played");
+  $("#major-name").html("&nbsp;");
+  $(".counts").css("margin-left", 5+((noteCount-1)*41)+"px");
+
+  setTimeout(function() {
+    playNote(secondNote);
+    $("#major-keyboard #n"+noteCount).removeClass("played");
+    $("#major-keyboard #n"+(noteCount+4)).addClass("played");
+  }, interval);
+  setTimeout(function() {
+    playNote(thirdNote);
+    $("#major-keyboard #n"+(noteCount+4)).removeClass("played");
+    $("#major-keyboard #n"+(noteCount+7)).addClass("played");
+  }, 2*interval);
+  setTimeout(function() {
+    $("#major-name").html(chordName+" Major Chord");
+    $("#major-keyboard #n"+noteCount).addClass("played");
+    $("#major-keyboard #n"+(noteCount+4)).addClass("played");
+    playChord(freq, secondNote, thirdNote);
+  }, 3*interval);
+  setTimeout(function() {
+    $("#major-keyboard").removeClass("played");
+  }, 5*interval);
+});
+
+$("#minor-keyboard .note").click(function(){
+  $("#minor-keyboard .note").removeClass("played");
+  var interval = 600;
+  var freq = $(this).attr("attr-freq");
+  var secondNote = freq * 1.189;
+  var thirdNote = freq * 3 / 2;
+  var noteCount = parseInt($(this).attr("attr-note-count"));
+  var chordName = $(this).html();
+  $("#minor-keyboard").addClass("played");
+  playNote(freq);
+  $("#minor-keyboard #n"+noteCount).addClass("played");
+  $("#minor-name").html("&nbsp;");
+  $(".minor-counts").css("margin-left", 5+((noteCount-1)*41)+"px");
+
+  setTimeout(function() {
+    playNote(secondNote);
+    $("#minor-keyboard #n"+noteCount).removeClass("played");
+    $("#minor-keyboard #n"+(noteCount+3)).addClass("played");
+  }, interval);
+  setTimeout(function() {
+    playNote(thirdNote);
+    $("#minor-keyboard #n"+(noteCount+3)).removeClass("played");
+    $("#minor-keyboard #n"+(noteCount+7)).addClass("played");
+  }, 2*interval);
+  setTimeout(function() {
+    $("#minor-name").html(chordName+" Minor Chord");
+    $("#minor-keyboard #n"+noteCount).addClass("played");
+    $("#minor-keyboard #n"+(noteCount+3)).addClass("played");
+    playChord(freq, secondNote, thirdNote);
+  }, 3*interval);
+  setTimeout(function() {
+    $("#minor-keyboard").removeClass("played");
+  }, 5*interval);
+});
+
+$("#diminished-keyboard .note").click(function(){
+  $("#diminished-keyboard .note").removeClass("played");
+  var interval = 600;
+  var freq = $(this).attr("attr-freq");
+  var secondNote = freq * 1.189;
+  var thirdNote = freq * 1.414;
+  var noteCount = parseInt($(this).attr("attr-note-count"));
+  var chordName = $(this).html();
+  $("#diminished-keyboard").addClass("played");
+  playNote(freq);
+  $("#diminished-keyboard #n"+noteCount).addClass("played");
+  $("#diminished-name").html("&nbsp;");
+  $(".diminished-counts").css("margin-left", 5+((noteCount-1)*41)+"px");
+
+  setTimeout(function() {
+    playNote(secondNote);
+    $("#diminished-keyboard #n"+noteCount).removeClass("played");
+    $("#diminished-keyboard #n"+(noteCount+3)).addClass("played");
+  }, interval);
+  setTimeout(function() {
+    playNote(thirdNote);
+    $("#diminished-keyboard #n"+(noteCount+3)).removeClass("played");
+    $("#diminished-keyboard #n"+(noteCount+6)).addClass("played");
+  }, 2*interval);
+  setTimeout(function() {
+    $("#diminished-name").html(chordName+" Diminished Chord");
+    $("#diminished-keyboard #n"+noteCount).addClass("played");
+    $("#diminished-keyboard #n"+(noteCount+3)).addClass("played");
+    playChord(freq, secondNote, thirdNote);
+  }, 3*interval);
+  setTimeout(function() {
+    $("#diminished-keyboard").removeClass("played");
+  }, 5*interval);
+});
+</script>
+
+
+<!--
+<p>Things Merrick found confusing:
+<ul>
+  <li>Difference between a note and a chord.</li>
+  <li>Why a Major chord doesnt relate to Major key (you could call it Flower)</li>
+  <li>Shifting the intervals to different starting notes</li>
+  <li>How chords fit in a particular key</li>
+  <li>Why you can't have D Major in a C Major scale</li>
+  <li>Move the colored keys closer together to compare Major Minor Diminished chords.</li>
+</ul>
+</p> -->
+
+  </div>
+
+</article>
+
+        <br>
+        <br>
+        
+          <style media="screen">
+  .see-course{
+    clear:left;
+    font:14px "Roboto",Helvetica,Arial,sans-serif;
+    background-color: #F4F4F4;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 36px;
+    position: relative;
+    padding-right: 150px;
+  }
+  .see-course h2 {
+    font-size: 20px;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  .see-course p {
+    width: auto;
+  }
+  .see-course-btn, .see-course-btn:link, .see-course-btn:visited, .see-course-btn:active {
+    background-color: #25CB68;
+    border-radius: 500px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #FFF;
+    font-size: 18px;
+    opacity: 1;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .see-course-btn:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    color: #FFF;
+    text-decoration: none;
+  }
+  .phone-img {
+    width: 163px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+</style>
+
+<!--div class="see-course">
+  <h2>LightNote Premium Course</h2>
+  <p>
+    Finally learn how music works! Learn to improvise, guitar theory, and much more!
+  </p>
+  <img src="/assets/images/book/phone.png" class="phone-img" alt="">
+  <a href="/course/?ref=bottom" target="_blank" class="see-course-btn">
+    View the Course
+  </a>
+</div-->
+
+        
+      </main>
+
+      <footer class="site-footer">
+<!-- 
+  <div class="wrapper">
+
+    <h2 class="footer-heading">LightNote</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              LightNote
+            
+            </li>
+            
+            <li><a href="mailto:nathan@lightnote.co">nathan@lightnote.co</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Learn Music Theory from First Principles. Interactive lessons to teach basic concepts about Music Theory.
+</p>
+      </div>
+    </div>
+  </div> -->
+</footer>
+
+    </div>
+
+  </body>
+  <script src="https://www.lightnote.co/assets/js/music.js"></script>
+  <script type="text/javascript">
+  $(".toggle-menu").click(function(){
+    $('body').toggleClass("sidebar-visible");
+    $('sidebar').toggleClass("sidebar-visible");
+  });
+  $(".cover").click(function(){
+    $('body').toggleClass("sidebar-visible");
+    $('sidebar').toggleClass("sidebar-visible");
+  });
+  </script>
+</html>
