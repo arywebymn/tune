@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=610">
+
+  
+  <!-- page hiding snippet -->
+<style>.async-hide { opacity: 0 !important} </style>
+<!--script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-TC8JNW6':true});</script-->
+
+  <!--script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86108975-2', 'auto');
+  ga('require', 'GTM-TC8JNW6'); // google optimize
+  ga('send', 'pageview');
+</script-->
+
+  
+
+  <title>Pentatonic Scale - Aryabhatiya</title>
+  <meta name="description" content="Learn Music Theory from First Principles. Interactive lessons to teach basic concepts about Music Theory.">
+
+  <meta property="og:title" content="Pentatonic Scale - Aryabhatiya" />
+  <meta property="og:description" content="Interactive lessons for learning Music Theory." />
+  <meta property="og:image" content="arya-ico.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="arya-ico.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.lightnote.co/assets/main.css?1547451433456163759">
+  <link rel="canonical" href="https://www.lightnote.co/music-theory/pentatonic/">
+  <link rel="alternate" type="application/rss+xml" title="Aryabhatiya" href="https://www.lightnote.co/feed.xml">
+  <link rel="stylesheet" href="https://www.lightnote.co/assets/rangeslider.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://www.lightnote.co/assets/js/rangeslider.min.js"></script>
+
+  <script src="https://www.lightnote.co/assets/js/tone.min.js"></script>
+  <script src="https://www.lightnote.co/assets/js/StartAudioContext.js"></script>
+  <script src="https://www.lightnote.co/assets/js/wave.js"></script>
+</head>
+
+
+  <body>
+    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="share-buttons">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div class="fb-share-button" data-href="https://music.aryabhatiya.ml" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+</div>
+
+    
+
+    <sidebar>
+      <div class="toggle-menu sidebar-menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      <a id="logo" href="/"></a>
+
+      <br>
+      <a href="https://www.lightnote.co/music-theory/waves/" class="topic">
+        <div class="topic-pic note1 wave"></div>
+        <h3>Sound Waves</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/harmony/" class="topic">
+        <div class="topic-pic note12 harmony"></div>
+        <h3>Harmony</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/pentatonic/" class="topic">
+        <div class="topic-pic note11 pentatonic"></div>
+        <h3>Pentatonic Scale</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/chromatic/" class="topic">
+        <div class="topic-pic note10 chromatic"></div>
+        <h3>Chromatic Scale</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/chords/" class="topic">
+        <div class="topic-pic note8 chords"></div>
+        <h3>Chords</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/keys/" class="topic">
+        <div class="topic-pic note6 key"></div>
+        <h3>Keys</h3>
+      </a>
+      <a href="https://www.lightnote.co/music-theory/diatonic/" class="topic">
+        <div class="topic-pic note5 chords"></div>
+        <h3>Diatonic Chords</h3>
+      </a>
+
+      <!--a class="prem-link" href="/course/?ref=sidebartitle">
+        <h3>Premium</h3>
+      </a-->
+      <br>
+      <!--a href="/course/?ref=sidebarpremium" target="_blank" class="topic soon">
+        <span class="coming-soon new">new</span>
+        <div class="topic-pic intro" style="background-color: #25CB68"></div>
+        <h3>LightNote Premium</h3>
+      </a-->
+      <!--a href="/course/?ref=sidebarlessonguitar" target="_blank" class="topic soon">
+        <div class="topic-pic blues"></div>
+        <span class="coming-soon">premium</span>
+        <h3>Guitar Theory</h3>
+      </a-->
+      <!--a href="/course/?ref=sidebarlessonpiano" target="_blank" class="topic soon">
+        <div class="topic-pic piano"></div>
+        <span class="coming-soon">premium</span>
+        <h3>Piano Theory</h3>
+      </a-->
+      <!--br-->
+
+      <!-- <a href="#" class="signup">Subscribe</a> -->
+      <!-- <h3>Later</h3>
+      <ul>
+        <li>Rhythm</li>
+        <li>Melodies</li>
+        <li>Layering</li>
+        <li>Mapping all of this to Piano / Guitar</li>
+        <li>Digital Instruments</li>
+        <li>Harmonies</li>
+        <li>Improv / Jamming</li>
+      </ul> -->
+    </sidebar>
+
+    <div class="cover"></div>
+
+    <div class="main-container">
+      <div class="menu toggle-menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      <main role="main" aria-label="Content">
+        <article class="post">
+
+  <div class="post-content">
+    <h1>The Pentatonic Scale<br><small>The five-note system that can do no wrong.</small></h1>
+<p>
+  A lot of music theory is about limiting which notes to use in your song to a small set that sound good together. The earliest set of such notes was called the <strong>Pentatonic Scale</strong>. It has five notes and looks like this:
+</p>
+
+<div class="note note1 round" attr-freq="262">1
+</div><div class="empty-note">
+</div><div class="note note3 round" attr-freq="294">2
+</div><div class="empty-note">
+</div><div class="note note5 round" attr-freq="330">3
+</div><div class="empty-note">
+</div><div class="empty-note">
+</div><div class="note note8 round" attr-freq="392">4
+</div><div class="empty-note">
+</div><div class="note note10 round" attr-freq="440">5
+</div>
+<br>
+<br>
+<br>
+<p>
+  Click the circles to play the notes.
+</p>
+
+
+<h1><div class="note note1 round" attr-freq="262">1</div>Note 1</h1>
+<p>
+  Lets look at each of these notes and their waveforms.
+</p>
+<div id="c" class="play-btn">Play</div>
+<div id="vis0" class="full-wave"></div>
+<br><br>
+
+<p>
+  One of the most important things to understand is that the notes themselves aren't important.
+  <strong>You could start the pentatonic scale on any frequency.</strong>
+  In this case, Note 1 has a frequency of 200Hz, but it could be any other number as well.
+</p>
+<p>
+  What <i><strong>is</strong></i> important is the ratio the other notes have with Note 1. <br>Lets take a look.
+</p>
+
+<h1><div class="note note8 round" attr-freq="392">4</div>Note 4</h1>
+<p>
+  For Note 4 we have a very simple ratio of 3:2. That is, for every two waves of Note 1 (200Hz) there are three of Note 4 (300Hz). Click <strong>play</strong> to hear how nice they sound together.
+</p>
+<div id="cg" class="play-btn">Play</div>
+<div id="vis3" class="full-wave overlap"></div>
+<div id="vis4" class="full-wave"></div>
+
+<h1><div class="note note5 round" attr-freq="330">3</div>Note 3</h1>
+<p>
+  The next ratio used is 5:4. Note 3 has a frequency of 250Hz. You can see that for every four waves of Note 1 there are five of the Note 3.
+</p>
+<div id="ce" class="play-btn">Play</div>
+<div id="vis5" class="full-wave overlap"></div>
+<div id="vis6" class="full-wave"></div>
+
+<h1><div class="note note10 round" attr-freq="440">5</div>Note 5</h1>
+<p>
+  The next ratio used is 5:3 to give us 333.3Hz. You can see that for every three waves of Note 1 there are five of Note 5.
+</p>
+<div id="ca" class="play-btn">Play</div>
+<div id="vis7" class="full-wave overlap"></div>
+<div id="vis8" class="full-wave"></div>
+
+<h1><div class="note note3 round" attr-freq="294">2</div>Note 2</h1>
+<p>
+  Lastly is Note 2 with a ratio of 9:8 (225Hz). You can see that for every eight of Note 1 there are nine of Note 2.
+</p>
+
+<p>
+  You might have noticed that this ratio isn't as simple and therefore these two notes don't sound as nice together as some of the previous notes.
+</p>
+<div id="cd" class="play-btn">Play</div>
+<div id="vis9" class="full-wave overlap"></div>
+<div id="vis10" class="full-wave"></div>
+
+<h1>All together</h1>
+<p>
+  Arranging these notes in order of increasing frequency is known as a <strong>scale</strong>. It's not important to remember these numbers. Just remember that simpler ratios make better sounding combinations of notes.
+</p>
+
+<div class="note note1 round" attr-freq="262">1 <span>200Hz</span>
+</div><div class="empty-note">
+</div><div class="note note3 round" attr-freq="294">2 <span>225Hz</span>
+</div><div class="empty-note">
+</div><div class="note note5 round" attr-freq="330">3 <span>250Hz</span>
+</div><div class="empty-note">
+</div><div class="empty-note">
+</div><div class="note note8 round" attr-freq="392">4 <span>300Hz</span>
+</div><div class="empty-note">
+</div><div class="note note10 round" attr-freq="440">5 <span>333.33Hz</span>
+</div>
+
+<div class="ratio-line-1 ratio-line"><span>9:8</span></div>
+<div class="ratio-line-2 ratio-line"><span>5:4</span></div>
+<div class="ratio-line-3 ratio-line"><span>3:2</span></div>
+<div class="ratio-line-4 ratio-line"><span>5:3</span></div>
+
+<style media="screen">
+  .note span {
+    position: relative;
+    top: 20px;
+    color: #888;
+    text-align: center;
+    left: -8px;
+  }
+  .ratio-line {
+    position: absolute;
+    border: 1px solid #888;
+    border-top: 0;
+    height: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+  .ratio-line span {
+    position: absolute;
+    text-align: center;
+    bottom: -22px;
+    color: #888;
+    margin-left: -10px;
+  }
+  .ratio-line-1 {
+    width: 102px;
+  }
+  .ratio-line-2 {
+    width: 204px;
+    height: 50px;
+  }
+  .ratio-line-3 {
+    width: 358px;
+    height: 90px;
+  }
+  .ratio-line-4 {
+    width: 460px;
+    height: 130px;
+  }
+
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1>Octaves</h1>
+<p>
+  Finally, lets find a pair of notes with the simplest ratio, 2:1. This is known as an Octave and is not considered a new note. <strong>An Octave is the same note with a higher pitch.</strong> In this case 400Hz and 200Hz.
+</p>
+
+<div id="cc" class="play-btn">Play</div>
+<div id="vis1" class="full-wave overlap"></div>
+<div id="vis2" class="full-wave"></div>
+
+<h1>Scales repeat with Octaves</h1>
+<p>
+  Octaves allow us to repeat a scale. Try playing the notes below.
+</p>
+<div class="compressed">
+<div class="note note1 round" attr-freq="262">1 <span>200Hz</span>
+</div><div class="note note3 round" attr-freq="294">2 <span>225Hz</span>
+</div><div class="note note5 round" attr-freq="330">3 <span>250Hz</span>
+</div><div class="note note8 round" attr-freq="392">4 <span>300Hz</span>
+</div><div class="note note10 round" attr-freq="440">5 <span>333.3Hz</span>
+</div><div class="note note1 round" attr-freq="524">1 <span>400Hz</span>
+</div><div class="note note3 round" attr-freq="588">2 <span>450Hz</span>
+</div><div class="note note5 round" attr-freq="660">3 <span>500Hz</span>
+</div><div class="note note8 round" attr-freq="784">4 <span>600Hz</span>
+</div><div class="note note10 round" attr-freq="880">5 <span>666.6Hz</span>
+</div>
+</div>
+<br>
+<br>
+<br>
+<p>
+  The Pentatonic scale was used heavily in Ancient Chinese music. Since these notes sound great together, it's almost impossible to create a melody that sounds poor. Give it a shot.
+</p>
+
+
+<style media="screen">
+  .compressed {
+    margin-top: 36px;
+  }
+  .compressed span {
+    position: relative;
+    left: -10px;
+    opacity: 0.5;
+  }
+  .compressed .note:hover span {
+    opacity: 1;
+  }
+  .compressed .note {
+    margin-right: 4px;
+  }
+</style>
+
+
+<h1>The Chromatic Scale</h1>
+<p>
+  Next we'll take a look at the foundational scale of modern music, the Chromatic Scale.
+</p>
+<a href="https://www.lightnote.co/music-theory/chromatic/" class="next-btn">Next Section</a>
+
+<style media="screen">
+.note {
+  height: 50px;
+  width: 50px;
+  padding: 15px;
+}
+
+.empty-note {
+  height: 50px;
+  width: 50px;
+}
+
+.overlap {
+  margin-bottom: -155px;
+}
+</style>
+
+<script type="text/javascript">
+$(".note").click(function(){
+  var freq = $(this).attr("attr-freq");
+  playNote(freq);
+});
+
+drawWave("#vis0", 150, 12, "#E54C4E");
+
+drawWave("#vis1", 150, 12, "#E54C4E");
+drawWave("#vis2", 150, 23.7, "#888");
+
+drawWave("#vis3", 150, 12, "#E54C4E");
+drawWave("#vis4", 150, 17.85, "#3FA9B4");
+
+drawWave("#vis5", 150, 24, "#E54C4E");
+drawWave("#vis6", 150, 14.95*2, "#E3C749");
+
+drawWave("#vis7", 150, 24, "#E54C4E");
+drawWave("#vis8", 150, 39.8, "#4E45B3");
+
+drawWave("#vis9", 150, 24, "#E54C4E");
+drawWave("#vis10", 150, 26.95, "#E4AB51");
+
+$("#c").click(function(){
+  playNote(262);
+});
+
+$("#cc").click(function(){
+  playNote(262);
+  setTimeout(function() {
+    playNote(524);
+  }, 600);
+  setTimeout(function() {
+    playPair(262, 524);
+  }, 1200);
+});
+
+$("#cd").click(function(){
+  playNote(262);
+  setTimeout(function() {
+    playNote(294);
+  }, 600);
+  setTimeout(function() {
+    playPair(262, 294);
+  }, 1200);
+});
+
+$("#ce").click(function(){
+  playNote(262);
+  setTimeout(function() {
+    playNote(330);
+  }, 600);
+  setTimeout(function() {
+    playPair(262, 330);
+  }, 1200);
+});
+
+$("#cg").click(function(){
+  playNote(262);
+  setTimeout(function() {
+    playNote(392);
+  }, 600);
+  setTimeout(function() {
+    playPair(262, 392);
+  }, 1200);
+});
+
+$("#ca").click(function(){
+  playNote(262);
+  setTimeout(function() {
+    playNote(440);
+  }, 600);
+  setTimeout(function() {
+    playPair(262, 440);
+  }, 1200);
+});
+
+// 262
+// 294
+// 330
+// 392
+// 440
+
+</script>
+
+  </div>
+
+</article>
+
+        <br>
+        <br>
+        
+          <style media="screen">
+  .see-course{
+    clear:left;
+    font:14px "Roboto",Helvetica,Arial,sans-serif;
+    background-color: #F4F4F4;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 36px;
+    position: relative;
+    padding-right: 150px;
+  }
+  .see-course h2 {
+    font-size: 20px;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 5px;
+  }
+  .see-course p {
+    width: auto;
+  }
+  .see-course-btn, .see-course-btn:link, .see-course-btn:visited, .see-course-btn:active {
+    background-color: #25CB68;
+    border-radius: 500px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #FFF;
+    font-size: 18px;
+    opacity: 1;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .see-course-btn:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    color: #FFF;
+    text-decoration: none;
+  }
+  .phone-img {
+    width: 163px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+</style>
+
+<!--div class="see-course">
+  <h2>LightNote Premium Course</h2>
+  <p>
+    Finally learn how music works! Learn to improvise, guitar theory, and much more!
+  </p>
+  <img src="/assets/images/book/phone.png" class="phone-img" alt="">
+  <a href="/course/?ref=bottom" target="_blank" class="see-course-btn">
+    View the Course
+  </a>
+</div-->
+
+        
+      </main>
+
+      <footer class="site-footer">
+<!-- 
+  <div class="wrapper">
+
+    <h2 class="footer-heading">LightNote</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              LightNote
+            
+            </li>
+            
+            <li><a href="mailto:nathan@lightnote.co">nathan@lightnote.co</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Learn Music Theory from First Principles. Interactive lessons to teach basic concepts about Music Theory.
+</p>
+      </div>
+    </div>
+  </div> -->
+</footer>
+
+    </div>
+
+  </body>
+  <script src="https://www.lightnote.co/assets/js/music.js"></script>
+  <script type="text/javascript">
+  $(".toggle-menu").click(function(){
+    $('body').toggleClass("sidebar-visible");
+    $('sidebar').toggleClass("sidebar-visible");
+  });
+  $(".cover").click(function(){
+    $('body').toggleClass("sidebar-visible");
+    $('sidebar').toggleClass("sidebar-visible");
+  });
+  </script>
+</html>
